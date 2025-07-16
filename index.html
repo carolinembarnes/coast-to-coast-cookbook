@@ -6,27 +6,132 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Coast to Coast Cookbook</h1>
-        <p>Inspired by life on both coasts, this is a collection of my favorite recipes to share with friends and family.</p>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Coast to Coast</h1>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#breakfast" onclick="showCategory('breakfast')">Breakfast</a></li>
+                    <li><a href="#lunch" onclick="showCategory('lunch')">Lunch</a></li>
+                    <li><a href="#dinner" onclick="showCategory('dinner')">Dinner</a></li>
+                    <li><a href="#side-dishes" onclick="showCategory('side-dishes')">Sides</a></li>
+                    <li><a href="#all" onclick="showCategory('all')" class="active">All Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="recipes/mamas-chicken-soup.html">Mama’s Chicken Soup</a></li>
-            <li><a href="recipes/avocado-quinoa-superfood-salad.html">Avocado & Quinoa Superfood Salad</a></li>
-            <li><a href="recipes/carolina-shrimp-and-grits.html">Carolina Shrimp & Grits</a></li>
-            <li><a href="recipes/mamas-baked-shrimp.html">Mama’s Baked Shrimp</a></li>
-            <li><a href="recipes/carolines-veggie-enchiladas.html">Caroline's Veggie Enchiladas</a></li>
-            <li><a href="recipes/edisto-tomato-pie.html">Edisto Tomato Pie</a></li>
-            <li><a href="recipes/dads-ground-beef-torta.html">Dad’s Ground Beef Torta</a></li>
-            <li><a href="recipes/holiday-mac-and-cheese.html">Holiday Mac & Cheese</a></li>
-            <li><a href="recipes/instant-pot-bolognese.html">Instant Pot Bolognese</a></li>
-            <li><a href="recipes/roasted-butternut-squash-spicy-sausage-pasta.html">Roasted Butternut Squash & Spicy Sausage Pasta</a></li>
-            <li><a href="recipes/too-easy-chicken-perlo.html">Too Easy Chicken Perlo</a></li>
-        </ul>
-    </nav>
+        
+        <main class="main-content">
+            <header class="hero-header">
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/800x300/dbe7e4/3a2f27?text=Coast+to+Coast+Cookbook" alt="Coast to Coast Cookbook" />
+                </div>
+                <div class="hero-text">
+                    <h1>Coast to Coast Cookbook</h1>
+                    <p>Inspired by life on both coasts, this is a collection of my favorite recipes to share with friends and family.</p>
+                </div>
+            </header>
+            
+            <section class="about-me">
+                <h2>About Coast to Coast</h2>
+                <p>This cookbook is a love letter to the people and places that shaped the way I cook.</p>
+                
+                <p>My earliest memories in the kitchen aren't with my parents—they'll be the first to admit their food choices are…interesting. But I spent hours cooking and eating with my Granny (my mom's mom, a true Southern cook) and my Papaw (my dad's dad, who made the best cherry pie). That time in the kitchen was never really about mastering techniques. It was about being together. About sharing something.</p>
+                
+                <p>I didn't really start experimenting until college—when I nearly set the kitchen on fire trying to make fried chicken for my then-boyfriend (now husband). I kept going, learning by trial and error. Eventually I stopped following recipes and started making my own.</p>
+                
+                <p>My cooking today is still rooted in family. Some of my go-to dishes now come from my father-in-law and his mom—"Mama" (pronounced meh-meh)—who bring their own lowcountry flavors to the table.</p>
+                
+                <p>I grew up in California and spent the first six years of my marriage in Oakland, where my cooking really took off. These days, we're back in Atlanta, closer to family on both sides.</p>
+                
+                <p>The name Coast to Coast is both geographic and emotional. These recipes come from both coasts and all the kitchens in between—from sweet Southern staples to bold California flavors. Each one carries a story, a memory, or a person I love.</p>
+                
+                <p>Thanks for being here. I hope you find something you love to share with someone at your table.</p>
+            </section>
+            
+            <section class="recipes-section">
+                <h2>Latest Recipes</h2>
+                
+                <div class="recipe-category" id="breakfast-recipes" style="display: none;">
+                    <h3>Breakfast</h3>
+                    <ul class="recipe-list">
+                        <!-- Breakfast recipes will be added as they're created -->
+                    </ul>
+                </div>
+                
+                <div class="recipe-category" id="lunch-recipes" style="display: none;">
+                    <h3>Lunch</h3>
+                    <ul class="recipe-list">
+                        <li><a href="recipes/avocado-quinoa-superfood-salad.html">Avocado & Quinoa Superfood Salad</a></li>
+                        <li><a href="recipes/watermelon-poke-salad.html">Watermelon "Poke" Salad</a></li>
+                        <li><a href="recipes/52nd-street-miso-ramen.html">52nd Street Miso Ramen</a></li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-category" id="dinner-recipes" style="display: none;">
+                    <h3>Dinner</h3>
+                    <ul class="recipe-list">
+                        <li><a href="recipes/mamas-chicken-soup.html">Mama's Chicken Soup</a></li>
+                        <li><a href="recipes/carolina-shrimp-and-grits.html">Carolina Shrimp & Grits</a></li>
+                        <li><a href="recipes/mamas-baked-shrimp.html">Mama's Baked Shrimp</a></li>
+                        <li><a href="recipes/carolines-veggie-enchiladas.html">Caroline's Veggie Enchiladas</a></li>
+                        <li><a href="recipes/dads-ground-beef-torta.html">Dad's Ground Beef Torta</a></li>
+                        <li><a href="recipes/instant-pot-bolognese.html">Instant Pot Bolognese</a></li>
+                        <li><a href="recipes/roasted-butternut-squash-spicy-sausage-pasta.html">Roasted Butternut Squash & Spicy Sausage Pasta</a></li>
+                        <li><a href="recipes/too-easy-chicken-perlo.html">Too Easy Chicken Perlo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-category" id="side-dishes-recipes" style="display: none;">
+                    <h3>Side Dishes</h3>
+                    <ul class="recipe-list">
+                        <li><a href="recipes/holiday-mac-and-cheese.html">Holiday Mac & Cheese</a></li>
+                        <li><a href="recipes/edisto-tomato-pie.html">Edisto Tomato Pie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="recipe-category" id="all-recipes">
+                    <h3>All Recipes</h3>
+                    <ul class="recipe-list">
+                        <li><a href="recipes/mamas-chicken-soup.html">Mama's Chicken Soup</a></li>
+                        <li><a href="recipes/avocado-quinoa-superfood-salad.html">Avocado & Quinoa Superfood Salad</a></li>
+                        <li><a href="recipes/carolina-shrimp-and-grits.html">Carolina Shrimp & Grits</a></li>
+                        <li><a href="recipes/mamas-baked-shrimp.html">Mama's Baked Shrimp</a></li>
+                        <li><a href="recipes/carolines-veggie-enchiladas.html">Caroline's Veggie Enchiladas</a></li>
+                        <li><a href="recipes/edisto-tomato-pie.html">Edisto Tomato Pie</a></li>
+                        <li><a href="recipes/dads-ground-beef-torta.html">Dad's Ground Beef Torta</a></li>
+                        <li><a href="recipes/holiday-mac-and-cheese.html">Holiday Mac & Cheese</a></li>
+                        <li><a href="recipes/instant-pot-bolognese.html">Instant Pot Bolognese</a></li>
+                        <li><a href="recipes/roasted-butternut-squash-spicy-sausage-pasta.html">Roasted Butternut Squash & Spicy Sausage Pasta</a></li>
+                        <li><a href="recipes/too-easy-chicken-perlo.html">Too Easy Chicken Perlo</a></li>
+                        <li><a href="recipes/52nd-street-miso-ramen.html">52nd Street Miso Ramen</a></li>
+                        <li><a href="recipes/watermelon-poke-salad.html">Watermelon "Poke" Salad</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    
     <footer>
         <p>Created by carolinembarnes</p>
     </footer>
+    
+    <script>
+        function showCategory(category) {
+            // Hide all recipe categories
+            const categories = document.querySelectorAll('.recipe-category');
+            categories.forEach(cat => cat.style.display = 'none');
+            
+            // Show selected category
+            const targetCategory = document.getElementById(category + '-recipes');
+            if (targetCategory) {
+                targetCategory.style.display = 'block';
+            }
+            
+            // Update active state in navigation
+            const navLinks = document.querySelectorAll('.top-nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>

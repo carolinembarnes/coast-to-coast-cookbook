@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>Recipe Categories</h2>
-            <nav class="category-nav">
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Coast to Coast</h1>
+            <nav class="top-nav">
                 <ul>
                     <li><a href="#breakfast" onclick="showCategory('breakfast')">Breakfast</a></li>
                     <li><a href="#lunch" onclick="showCategory('lunch')">Lunch</a></li>
                     <li><a href="#dinner" onclick="showCategory('dinner')">Dinner</a></li>
-                    <li><a href="#side-dishes" onclick="showCategory('side-dishes')">Side Dishes</a></li>
+                    <li><a href="#side-dishes" onclick="showCategory('side-dishes')">Sides</a></li>
                     <li><a href="#all" onclick="showCategory('all')" class="active">All Recipes</a></li>
                 </ul>
             </nav>
-        </aside>
+        </div>
+    </header>
         
         <main class="main-content">
             <header class="hero-header">
@@ -97,7 +98,6 @@
                 </div>
             </section>
         </main>
-    </div>
     
     <footer>
         <p>Created by carolinembarnes</p>
@@ -116,7 +116,7 @@
             }
             
             // Update active state in navigation
-            const navLinks = document.querySelectorAll('.category-nav a');
+            const navLinks = document.querySelectorAll('.top-nav a');
             navLinks.forEach(link => link.classList.remove('active'));
             event.target.classList.add('active');
         }
